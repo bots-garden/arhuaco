@@ -7,7 +7,7 @@ tasks:
     init: | # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
       git clone https://github.com/dylibso/chicory.git
       cd chicory
-      sdk install java 18.0.1.fx-zulu --quiet
+      sdk default java 18.0.1.fx-zulu 
       mvn clean package
 
     command: |
