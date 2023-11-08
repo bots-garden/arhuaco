@@ -8,9 +8,14 @@ image: gitpod/workspace-full:latest
 tasks:
   - name: Script Task
     init: | # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
-      #git clone https://github.com/dylibso/chicory.git
-      #cd chicory
-      #mvn clean package
+      JAVA="18.0.1.fx-zulu"
+      echo "n" | sdk install java ${JAVA} || true
+      sdk default java ${JAVA}
+      git clone https://github.com/dylibso/chicory.git
+      cd chicory/test-gen-plugin
+      mvn clean package
+      cd ..
+      mvn clean package
 
     command: |
       echo "🚧"
