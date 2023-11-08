@@ -11,14 +11,13 @@ tasks:
       JAVA="18.0.1.fx-zulu"
       echo "n" | sdk install java ${JAVA} || true
       sdk default java ${JAVA}
+    command: |
       git clone https://github.com/dylibso/chicory.git
-      cd chicory/test-gen-plugin
+      cd chicory
+      cd test-gen-plugin
       mvn clean package
       cd ..
       mvn clean package
-
-    command: |
-      echo "🚧"
 
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
