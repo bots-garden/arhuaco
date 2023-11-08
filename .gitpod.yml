@@ -1,16 +1,16 @@
 # Image of workspace. Learn more: https://www.gitpod.io/docs/configure/workspaces/workspace-image
-#image: gitpod/workspace-full:latest
+image: gitpod/workspace-full:latest
 
-image:
-    file: .gitpod.Dockerfile
+#image:
+#    file: .gitpod.Dockerfile
 
 # List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
 tasks:
   - name: Script Task
     init: | # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
-      git clone https://github.com/dylibso/chicory.git
-      cd chicory
-      mvn clean package
+      #git clone https://github.com/dylibso/chicory.git
+      #cd chicory
+      #mvn clean package
 
     command: |
       echo "🚧"
