@@ -18,6 +18,7 @@ tasks:
       mvn clean package
       cd ..
       mvn clean package
+      cp runtime/target/runtime-*.jar ../
 
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
