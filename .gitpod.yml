@@ -28,6 +28,14 @@ tasks:
         -Dpackaging=jar \
         -DgeneratePom=true
 
+      #mvn install:install-file \
+      #  -Dfile=/workspace/arhuaco/Hello/src/main/resources/wasm-support-plugin-1.0-SNAPSHOT.jar \
+      #  -DgroupId=com.dylibso.chicory \
+      #  -DartifactId=wasm-support-plugin \
+      #  -Dversion=1.0-SNAPSHOT \
+      #  -Dpackaging=jar \
+      #  -DgeneratePom=true
+
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
