@@ -26,8 +26,8 @@ public class Main {
 mvn install:install-file \
    -Dfile=/workspace/arhuaco/Hello/src/main/resources/runtime-1.0-SNAPSHOT.jar \
    -DgroupId=com.dylibso.chicory \
-   -DartifactId=chicory \
-   -Dversion=0.0.1 \
+   -DartifactId=runtime \
+   -Dversion=1.0-SNAPSHOT \
    -Dpackaging=jar \
    -DgeneratePom=true
 */
