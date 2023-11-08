@@ -4,6 +4,7 @@ package garden.bots;
 import java.io.File;
 
 import com.dylibso.chicory.runtime.Module;
+import com.dylibso.chicory.runtime.Instance;
 
 
 public class Main {
