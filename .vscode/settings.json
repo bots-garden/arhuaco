@@ -5,4 +5,5 @@
     "editor.fontSize": 16,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
+    "java.configuration.updateBuildConfiguration": "interactive",
   }

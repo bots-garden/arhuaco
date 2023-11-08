@@ -13,11 +13,11 @@
             <groupId>com.dylibso.chicory</groupId>
             <artifactId>chicory</artifactId>
             <version>0.0.1</version>
-            <scope>system</scope>
+            
             <!--
-                <systemPath>${basedir}/path/to/my-jar.jar</systemPath>
+                <scope>system</scope>
+                <systemPath>${project.basedir}/src/main/resources/runtime-1.0-SNAPSHOT.jar</systemPath>
             -->
-            <systemPath>${basedir}/../runtime-1.0-SNAPSHOT.jar</systemPath>
         </dependency>
     </dependencies>
 

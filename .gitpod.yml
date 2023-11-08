@@ -18,7 +18,15 @@ tasks:
       mvn clean package
       cd ..
       mvn clean package
-      cp runtime/target/runtime-*.jar ../
+      cp runtime/target/runtime-*.jar ../Hello/src/main/resources
+      cd ../Hello
+      mvn install:install-file \
+        -Dfile=/workspace/arhuaco/Hello/src/main/resources/runtime-1.0-SNAPSHOT.jar \
+        -DgroupId=com.dylibso.chicory \
+        -DartifactId=chicory \
+        -Dversion=0.0.1 \
+        -Dpackaging=jar \
+        -DgeneratePom=true
 
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
